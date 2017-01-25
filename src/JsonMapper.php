@@ -10,6 +10,7 @@ use ReflectionProperty;
 
 /**
  * Maps decoded JSON Object on to a class
+ * Based on the Project from @cweiske on GitHub
  * @package  JsonMapper
  * @author   David Höck <david.hoeck@womensbest.com>
  * @license  OSL-3.0 http://opensource.org/licenses/osl-3.0
@@ -323,8 +324,7 @@ class JsonMapper
      * @return mixed
      * @throws JsonMapperException
      */
-    public function mapArray($json, $array, $class = null)
-    {
+    public function mapArray($json, $array, $class = null){
         foreach ($json as $jsonKey => $jsonValue) {
             $jsonKey = $this->getSafeName($jsonKey);
             if ($class === null) {
@@ -475,9 +475,7 @@ class JsonMapper
      *
      * @return void
      */
-    protected function setProperty(
-        $object, $accessor, $value
-    ) {
+    protected function setProperty( $object, $accessor, $value) {
         if (!$accessor->isPublic() && $this->ignoreVisibility) {
             $accessor->setAccessible(true);
         }
@@ -497,9 +495,7 @@ class JsonMapper
      * @param null $parameter
      * @return mixed
      */
-    public function createInstance(
-        $class, $useParameter = false, $parameter = null
-    ) {
+    public function createInstance( $class, $useParameter = false, $parameter = null) {
         if (isset($this->overrideClassMap[$class])) {
             $class = $this->overrideClassMap[$class];
         }
@@ -519,8 +515,7 @@ class JsonMapper
      *
      * @see isFlatType()
      */
-    protected function isSimpleType($type)
-    {
+    protected function isSimpleType($type){
         return $type == 'string'
         || $type == 'boolean' || $type == 'bool'
         || $type == 'integer' || $type == 'int'
@@ -601,8 +596,7 @@ class JsonMapper
      *
      * @return array
      */
-    protected static function parseAnnotations($docblock)
-    {
+    protected static function parseAnnotations($docblock){
         $annotations = array();
         // Strip away the docblock header and footer
         // to ease parsing of one line annotations
@@ -643,8 +637,7 @@ class JsonMapper
      *
      * @return null
      */
-    public function setLogger($logger)
-    {
+    public function setLogger($logger){
         $this->logger = $logger;
     }
 }
