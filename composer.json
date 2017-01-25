@@ -1,0 +1,14 @@
+{
+    "name": "davidhoeck/laravel-jsonmapper",
+    "description": "Map JSON Responses to PHP Models",
+    "type": "library",
+    "license": "OSL3.0",
+    "authors": [
+        {
+            "name": "David Höck",
+            "email": "david.hoeck@womensbest.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
