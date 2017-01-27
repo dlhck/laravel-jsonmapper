@@ -9,6 +9,10 @@
             "email": "david.hoeck@womensbest.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+          "DavidHoeck\\LaravelJsonMapper\\": "src/"
+        }
+    }
 }
