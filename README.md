@@ -1,4 +1,9 @@
 # Laravel JSON Mapper
+[![Latest Stable Version](https://poser.pugx.org/davidhoeck/laravel-jsonmapper/v/stable)](https://packagist.org/packages/davidhoeck/laravel-jsonmapper)
+[![Total Downloads](https://poser.pugx.org/davidhoeck/laravel-jsonmapper/downloads)](https://packagist.org/packages/davidhoeck/laravel-jsonmapper)
+[![License](https://poser.pugx.org/davidhoeck/laravel-jsonmapper/license)](https://packagist.org/packages/davidhoeck/laravel-jsonmapper)
+[![Monthly Downloads](https://poser.pugx.org/davidhoeck/laravel-jsonmapper/d/monthly)](https://packagist.org/packages/davidhoeck/laravel-jsonmapper)
+
 Map any JSON String on to your PHP Objects. Tested with Laravel, but basically working with every PHP Framework that 
 supports namespaces. 
 
